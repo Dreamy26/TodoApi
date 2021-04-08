@@ -24,6 +24,7 @@ namespace TodoApi
             services.AddDbContext<TodoContext>(opt => opt.UseInMemoryDatabase("TodoList"));  // DB context, the container provides service to controllers.
 
             services.AddControllers();
+            services.AddSwaggerGen(); // add the Swagger generator, to remove an unhandled exception
             
         }
 
